@@ -62,7 +62,7 @@ int main(){
     int is_child = create_child(procs, N);
     if(is_child >= 0){
         struct sched_param param;
-        param.sched_priority = 10 - is_child;
+        param.sched_priority = 99 - is_child;
         sched_setscheduler(getpid(), SCHED_FIFO, &param);
         to_specific_core();
         for(int i = 0; i < procs[is_child].term; i++){
