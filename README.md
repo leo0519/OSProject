@@ -1,5 +1,7 @@
 # OSProject1
 ```
+Sample code for FIFO scheduling.
+
 env: linux ubuntu 16.04
 cmd: gcc sample.c -o sample && ./sample < sample.in
 
