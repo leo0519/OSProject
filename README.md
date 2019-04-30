@@ -1,14 +1,16 @@
 # OSProject1
-Sample code for FIFO scheduling.
+Sample code for user-defined scheduling.
 
 ```
-env: linux ubuntu 16.04
-cmd: cd sample && gcc sample.c -o sample && sudo ./sample < sample.in
-You need to have root priviledge to use SCHE_FIFO.
+env: linux ubuntu 16.04 gcc 5.4.0
+cmd: gcc main.c -o main -std=c99
+run: ./main               (stdin)
+     ./main < <inputfile> (filestream)
+You need to have root priviledge.
 ```
-Show on debug message.
+
+Message
 ```
-The message will show on stdout,
-use printk(KERN_DEBUG "AAAAA\n") to print on dmsg.
-(Remember to include linux/kernel.h)
+stdout: process name + process id
+dmesg : process id + start time + end time
 ```
