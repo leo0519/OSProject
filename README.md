@@ -7,6 +7,7 @@ cmd: cd kernel_files && make && cd .. && gcc main.c -o main -std=c99
 run: ./main               (stdin)
      ./main < <inputfile> (filestream)
 You need to have root priviledge.
+The directory 'origin' is neglectable.
 ```
 
 Message
