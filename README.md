@@ -1,5 +1,6 @@
 # OSProject1
-Sample code for user-defined scheduling.
+
+Code for user-defined scheduling FIFO, RR, SJF, PSJF.
 
 ```
 env: linux ubuntu 16.04 gcc 5.4.0
@@ -11,6 +12,7 @@ The directory 'origin' is neglectable.
 ```
 
 Message
+
 ```
 stdout: process name + process id
 dmesg : process id + start time + end time
